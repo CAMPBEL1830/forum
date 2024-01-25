@@ -2,7 +2,7 @@
 
 REM Configuration des variables d'environnement
 SET "STAGING_DIR=C:\staging"
-SET "APP_DIR=C:\Users\kboue\Desktop\Forum"
+SET "APP_DIR=C:\Users\silue\OneDrive\Bureau\Forum-konate"
 REM SET "COMPOSER_PATH=C:\chemin\vers\composer.bat"
 REM SET "COMPOSER_PATH=C:\laragon\bin\composer"
 SET COMPOSER_PATH=C:\ProgramData\ComposerSetup\bin\composer.bat

@@ -1,7 +1,7 @@
 @echo off
 
 REM Spécifiez le chemin complet vers le répertoire de déploiement
-SET "DEPLOYMENT_DIR=C:\Users\kboue\Desktop\Forum"
+SET "DEPLOYMENT_DIR=C:\Users\silue\OneDrive\Bureau\Forum-konate"
 
 echo --- Début du déploiement sur l'environnement de production ---
 
