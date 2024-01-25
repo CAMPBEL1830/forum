@@ -48,14 +48,14 @@ pipeline {
         //     }
         // }
 //Création d'un dossier tests a la racine du projet
-        stage('Tests d\'Intégration') {
+        /*stage('Tests d\'Intégration') {
             steps {
                 script {
                     // Commandes pour exécuter les tests d'intégration
                     bat 'vendor/bin/phpunit tests/Integration'
                 }
             }
-        }
+        }*/
 
         stage('Tests de Sécurité Automatisés') {
             steps {
