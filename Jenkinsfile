@@ -55,13 +55,13 @@ pipeline {
                     bat 'vendor/bin/phpunit tests/Integration'
                 }
             }
-        }/
+        }
 
         stage('Tests de Sécurité Automatisés') {
             steps {
                 script {
                     // Commandes pour exécuter les tests de sécurité automatisés
-                    //bat '"vendor/bin/phpstan" analyse "C:\\Users\\kboue\\Desktop\\Forum\\analyse"'
+                    bat '"vendor/bin/phpstan" analyse "C:\\Users\\kboue\\Desktop\\Forum\\analyse"'
                     //installation du phpstan
                 }
             }
