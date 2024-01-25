@@ -61,7 +61,7 @@ pipeline {
             steps {
                 script {
                     // Commandes pour exécuter les tests de sécurité automatisés
-                    bat '"vendor/bin/phpstan" analyse "C:\\Users\\kboue\\Desktop\\Forum\\analyse"'
+                    bat '"vendor/bin/phpstan" analyse "C:\\Users\\silue\\OneDrive\\Bureau\\Forum-konate\\analyse"'
                     //installation du phpstan
                 }
             }
