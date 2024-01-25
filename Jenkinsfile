@@ -115,17 +115,17 @@ pipeline {
         }
 
         //code fonctionnel
-        // stage('Run MySQL Container') {
-        //     steps {
-        //         script {
-        //             def mysqlImage = docker.image('mysql:latest')
-        //             mysqlImage.pull()
-        //             mysqlImage.run('-p 3306:3306 --name mysql-container -e MYSQL_ROOT_PASSWORD=my-"" -d')
-        //         }
-        //     }
-        // }
-        //fint code fonctionnel
         stage('Run MySQL Container') {
+            steps {
+                script {
+                    def mysqlImage = docker.image('mysql:latest')
+                    mysqlImage.pull()
+                    mysqlImage.run('-p 3306:3306 --name mysql-container -e MYSQL_ROOT_PASSWORD=my-"" -d')
+                }
+            }
+        }
+        //fint code fonctionnel
+        /*stage('Run MySQL Container') {
             steps {
                 script {
                     // Récupérer l'ID du conteneur MySQL
@@ -148,7 +148,7 @@ pipeline {
                     docker.image('mysql:latest').run("-p 3306:3306 --name mysql-container -e MYSQL_ROOT_PASSWORD=my-secret-pw -d")
                 }
             }
-        }
+        }*/
 
 
         stage('Run Docker Container') {
